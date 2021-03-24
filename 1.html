@@ -3,9 +3,52 @@
 <head>
   <title>KALOS SOCCER TEAM</title>
   <meta charset="utf-8">
+  <style>
+        body{
+          margin:0;
+        }
+        a {
+          color:black;
+          text-decoration: none;
+        }
+        h1 {
+          font-size:50px;
+          text-align:center;
+          border-bottom:1px solid grey;
+          margin:0;
+          padding:20px;
+        }
+        ol {
+          border-right:1px solid grey;
+          width:100px;
+          margin:0;
+          padding:20px;
+        }
+        #grid {
+          display:grid;
+          grid-template-columns: 150px 1fr;
+        }
+        #grid ol {
+          padding-left: 35px;
+        }
+        #grid #article {
+          padding-left: 30px
+        }
+        @media(max-width:900px){
+          #grid {
+            display:block;
+        }
+          ol {
+            border-right:none;
+        }
+          h1 {
+            border-bottom:none;
+        }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">KALOS SOCCER TEAM</h1>
+  <h1><a href="index.html">KALOS SOCCER TEAM</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">팀 소개</a></li>
     <li><a href="2.html">팀 원 소개</a></li>
@@ -13,12 +56,15 @@
     <li><a href="4.html">갤러리</a></li>
     <li><a href="5.html">자료실</a></li>
   </ol>
-  <h2>팀 소개</h2>
+    <div id="article">
+    <h2>팀 소개</h2>
   <img src="coding.jpg" width="50%">
-  <p>안녕하십니까! 저희는 <a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC/address/14125964.830307413,4503010.558150221,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC,adm?c=14127397.3157794,4503602.8241628,12,0,0,0,dh" target="_black" title="지도, 날씨">금천</a>,
+  <p>안녕하십니까! 저희는 <u style="color:blue"><a href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC/address/14125964.830307413,4503010.558150221,%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EA%B8%88%EC%B2%9C%EA%B5%AC,adm?c=14127397.3157794,4503602.8241628,12,0,0,0,dh" target="_black" title="지도, 날씨">금천</a></u>,
      광명, 가산, 안양 등의 지역에서 볼을 차는 <strong style="color:purple">칼로스</strong>팀입니다.
   <br>유니폼은 남색이며, 20대 중반의 동네친구들끼리 만든 팀으로 창단한지 얼마 안됐습니다.
   <br>실력은 하상이고, 싸우려 하지않고 넘어지면 사과하며 매너가 최상인 재밌고 즐겁게 차는 팀입니다.
   <br>구장비 입금도 바로 가능합니다.</p>
+  </div>
+  </div>
 </body>
 </html>
